@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lk</groupId>
+    <artifactId>com.lk</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+   <dependencies>
+    <!-- Selenium Java -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.11.0</version> <!-- Updated Selenium version -->
+    </dependency>
+
+    <!-- Appium Java Client -->
+    <dependency>
+        <groupId>io.appium</groupId>
+        <artifactId>java-client</artifactId>
+        <version>8.5.1</version> <!-- Latest compatible version -->
+    </dependency>
+
+    <!-- WebDriverManager (optional, for browser drivers) -->
+    <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>5.5.0</version>
+    </dependency>
+</dependencies>
+
+    <build>
+        <plugins>
+            <!-- Maven Compiler Plugin to set Java source and target version -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
